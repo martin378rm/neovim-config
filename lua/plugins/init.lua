@@ -11,4 +11,12 @@ return require('packer').startup(function(use)
   }
   -- using packer.nvim
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+  use {'kyazdani42/nvim-web-devicons'}
+  use {'kyazdani42/nvim-tree.lua'}
+
+  use {
+    'chikko80/error-lens.nvim',
+    requires = {'nvim-telescope/telescope.nvim'}
+  }
+  use {'folke/which-key.nvim'}
 end)
